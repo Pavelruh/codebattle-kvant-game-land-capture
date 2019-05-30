@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Карты</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css.css">
-    <script src="Sort.js"></script>
-    <!-- VUE
-        <script src="vueTest.vue"></script>
-    -->
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/JavaScript" src="vue.js"></script>
+  
 </head>
 <body>
     <div id="header">
@@ -33,23 +33,23 @@
         </div></a>
     </div>
     <div id="content"> <!--НУЖНО ПОСТАВИТЬ КАРТИНКИ КАРТ И ПРИДУМАТЬ КАКИЕ-НИБУДЬ НАЗВАНИЯ-->
-        <table>
+        <table id="info">
             <tr>
                 <td>
                     <div id="cell">
-                        <h1>Name1</h1>
+                        <h1>{{name1}}</h1>
                         <img src="not_found.jpg" id="cell_img">
                     </div>
                 </td>
                 <td>
                     <div id="cell">
-                        <h1>Name2</h1>
+                        <h1>{{name2}}</h1>
                         <img src="not_found.jpg" id="cell_img">
                     </div>
                 </td>
                 <td>
                     <div id="cell">
-                        <h1>Name3</h1>
+                        <h1>{{name3}}</h1>
                         <img src="not_found.jpg" id="cell_img">
                     </div>
                 </td>
@@ -57,19 +57,19 @@
             <tr>
                 <td>
                     <div id="cell">
-                        <h1>Name4</h1>
+                        <h1>{{name4}}</h1>
                         <img src="not_found.jpg" id="cell_img">
                     </div>
                 </td>
                 <td>
                     <div id="cell">
-                        <h1>Name5</h1>
+                        <h1>{{name5}}</h1>
                         <img src="not_found.jpg" id="cell_img">
                     </div>
                 </td>
                 <td>
                     <div id="cell">
-                        <h1>Name6</h1>
+                        <h1>{{name6}}</h1>
                         <img src="not_found.jpg" id="cell_img">
                     </div>
                 </td>
@@ -79,5 +79,6 @@
     <footer align="center">
         <p>Izhevsk CodeBattle Kvantorium</p>
     </footer>
+    <script  src="Maps-vue.js"></script>
 </body>
 </html>
